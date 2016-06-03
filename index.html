@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="css/style_large.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:768px) and
-  (max-width:980px)" href="css/style_768.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:600px) and
-  (max-width:767px)" href="css/style_600.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:300px) and
-  (max-width:599px)" href="css/style_300.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
 </head>
 <body>
-  <div class="wrapper">
-    <aside id="aside">
-      <div id="my_image">
-        <img id="img" src="images/lovepreet.jpg" alt="Lovepreet Singh">
+
+  <nav>
+    <ul class="topnav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+      </li>
+    </ul>
+  </nav>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/image1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
       </div>
-      <div id="social">
-          <span id="social-title">Social Network</span>
-          <img class="social-icons" src="images/facebook_black.png">
-          <img class="social-icons" src="images/github_black.png">
-          <img class="social-icons" src="images/linkedin_black.png">
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/image2.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
       </div>
-      <div id="quote">
-        <span id="myQuote">My Quote goes here</span>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/image3.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
       </div>
-    </aside>
 
-    <main id="main">
-      <nav id="nav">
-        <ul class="sb-icon-list">
-        <li class="sb-item first-sb">
-          <span class="list-span">Home</span>
-        </li>
-        <li class="sb-item second-sb">
-          <span class="list-span">Profile</span>
-        </li>
-        <li class="sb-item third-sb">
-          <span class="list-span">Blog</span>
-        </li>
-        <li class="sb-item fourth-sb">
-          <span class="list-span">Portfolio</span>
-        </li>
-        <li class="sb-item fifth-sb">
-          <span class="list-span">Contact</span>
-        </li>
-      </ul>
-      </nav>
-      <article id="main_article">
-        <section id="main_article_section">
-          <div class="heading">This is heading</div>
-          <div class="content">This is main content</div>
-        </section>
-      </article>
-    </main>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
 
-    <footer id="footer">
-      <div id="footeer_contenct">
-        &copy Copyrights 2016 Lovepreet Singh
-      </div>
-    </footer>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
+    <main>
 
+        <div class="card view">
+          <img src="images/img_avatar1.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Lovepreet Singh</b></h4>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="card view">
+          <img src="images/img_avatar2.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Dheeraj Asnani</b></h4>
+            <p>Web Designer</p>
+          </div>
+        </div>
+        <div class="card view">
+          <img src="images/img_avatar3.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Chetan Mann</b></h4>
+            <p>Android Developer</p>
+          </div>
+        </div>
 
-    </div> <!-- End of Wrapper -->
-  </body>
-  </html>
+</main>
+
+<!--div id="map" style="width:100%;height:300px"-->
+
+<footer>
+  <p>Copyrights &copy 2016 Lovepreet Singh</p>
+</footer>
+
+<script src="js/style.js"></script>
+</body>
+</html>
